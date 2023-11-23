@@ -30,7 +30,7 @@ useEffect(() => {
 
 
   return <div>
-    <h3>Select the wheel type</h3>
+    <h3>Select the number of wheels</h3>
     <Form>
       {
         wheels?.length > 0 ?
