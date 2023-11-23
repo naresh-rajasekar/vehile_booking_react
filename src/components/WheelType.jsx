@@ -29,7 +29,7 @@ useEffect(() => {
 },[])
 
 
-  return <>
+  return <div>
     <h3>Select the wheel type</h3>
     <Form>
       {
@@ -57,7 +57,8 @@ useEffect(() => {
         onClick={() => {
           setIsNameShow(true)
           setIsWheelType(false)
-      }}
+        }}
+        className="marginRight"
       >
         Prev
       </Button>
@@ -69,12 +70,13 @@ useEffect(() => {
           setIsWheelType(false)
           setIsVehicleType(true)
         }}
+        className="mb-3"
 
       >
         Next
       </Button>
     </Form>
-  </>
+  </div>
 }
 
 export default WheelType

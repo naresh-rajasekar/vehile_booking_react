@@ -28,7 +28,7 @@ function ModelType({
     handleGetModels()  
   }, [vehicleTypeId])
 
-  return <>
+  return <div>
           <h3>Select the Model type</h3>
     <Form>
       {
@@ -55,7 +55,8 @@ function ModelType({
         onClick={() => {
           setIsVehicleType(true);
           setIsModelType(false);
-      }}
+        }}
+        className="marginRight"
       >
         Prev
       </Button>
@@ -74,7 +75,7 @@ function ModelType({
       </Button>
     </Form>
 
-  </>
+  </div>
 }
 
 export default ModelType

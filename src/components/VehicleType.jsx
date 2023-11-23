@@ -31,7 +31,7 @@ useEffect(() => {
   handleGetVehicles()  
 }, [wheelTypeId])
 
-  return <>
+  return <div>
         <h3>Select the vehicle type</h3>
     <Form>
       {
@@ -60,7 +60,8 @@ useEffect(() => {
         onClick={() => {
           setIsWheelType(true);
           setIsVehicleType(false)
-      }}
+        }}
+        className="marginRight"
       >
         Prev
       </Button>
@@ -78,7 +79,7 @@ useEffect(() => {
         Next
       </Button>
     </Form>
-  </>
+  </div>
 }
 
 export default VehicleType

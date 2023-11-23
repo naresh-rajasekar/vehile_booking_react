@@ -36,7 +36,7 @@ function FinalPage({
       
     }
   }
-  return <>
+  return <div>
         <h3>Select the date</h3>
     <Form>
       <Form.Group className="mb-3" >
@@ -70,7 +70,8 @@ function FinalPage({
         onClick={() => {
           setIsModelType(true);
           setIsFinal(false);
-      }}
+        }}
+        className="marginRight"
       >
         Prev
       </Button>
@@ -84,7 +85,7 @@ function FinalPage({
       </Button>
     </Form>
 
-  </>
+  </div>
 }
 
 export default FinalPage

@@ -43,10 +43,13 @@ function HomePage() {
          )
     }
   }
-  return <>
+  return    <div className="container d-flex justify-content-center marginTop">
+  
     {
-      isNameShow ?     <div>
-      <h3>What is your name?</h3>
+      isNameShow ?  
+      <div>  
+          <h3>What is your name?</h3>
+          
     <Form>
       <Form.Group className="mb-3" >
         <Form.Label>First Name</Form.Label>
@@ -70,7 +73,8 @@ function HomePage() {
             onChange={(e) => {
               setLastName(e.target.value);
             }}
-            required
+                required
+                className="mb-3"
             />
         </Form.Group>
         
@@ -78,12 +82,13 @@ function HomePage() {
           disabled= {firstName === "" || lastName === "" || booking?.firstName || booking?.lastName}
           onClick={(e) => {
           handleAddUser(e)
-      }}>
+              }}
+              className="mb-3">
         Next
       </Button>
     </Form>
   
-      </div> : 
+     </div> : 
         isWheelType ? 
           <WheelType 
             setIsNameShow={setIsNameShow}
@@ -126,7 +131,7 @@ function HomePage() {
                 /> : <></>
          }
 
-    </>
+    </div>
 }
 
 export default HomePage
